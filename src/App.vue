@@ -16,10 +16,12 @@
 
 <script>
 import axios from "axios";
+import dotenv from "dotenv";
+
 export default {
   data() {
     return {
-      access_token: "11225702.c2af2d0.1adb2060fac54cae9c42cf92a267b909",
+      access_token: process.env.ACCESS_TOKEN,
       url: "https://api.instagram.com/v1/users/self/media/recent/",
       username: "",
       grams: [],
